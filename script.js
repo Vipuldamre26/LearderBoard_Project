@@ -126,14 +126,16 @@ function updateData() {
 document.addEventListener("click", (e) => {
     if (e.target.classList.contains('delete')) {
         let personFname = e.target.parentElement.parentElement.children[0].innerText;
+        console.log(personFname);
         let personLname = e.target.parentElement.parentElement.children[1].innerText;
 
-        let index = data.findIndex((person) => {
-            (person.firstName == personFname && person.lastName == personLname)
+        let index = data.findIndex((person) => person.firstName.toUpperCase() == personFname)
 
-        })
+        console.log(index);
 
-        data.splice(index - 1, 1);
+        if (index !== -1) {
+            data.splice(index, 1);
+            updateData();
+        }
     }
-    updateData();
 })
