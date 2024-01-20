@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/bg.jpg');
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* filter: blur(70%); */
+    backdrop-filter: blur(7px);
+    height: fit-content;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 3rem;
+    font-family: monospace;
+}
+
+.section1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10vmin;
+    width: 80%;
+    
+}
+
+.section1 input{
+    background-color: rgba(0, 0, 0, 0.217);
+    height: 40px;
+    width: 28vmin;
+    border: none;
+    padding: 2px 5px;
+    margin: 0.2rem;
+    font-size: 3vmin;
+    color: rgba(0, 0, 0, 0.758);
+}
+
+.section1 button{
+    background-color: rgba(0, 0, 0, 0.573);
+    height: 40px;
+    width: 22vmin;
+    border: none;
+    padding: 2px 5px;
+    margin: 1rem;
+    color: white;
+    font-size: 3vmin;
+    cursor: pointer;
+}
+
+.section1 button:hover{
+    background-color: rgba(117, 55, 55, 0.331);
+    height: 40px;
+    width: 22vmin;
+    border: none;
+    padding: 2px 5px;
+    margin: 1rem;
+    color: rgba(0, 0, 0, 0.651);
+    font-size: 1.4rem;
+}
+
+
+.section2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 4vmin 10vmin;
+    width: 80%;
+}
+
+.playerDiv{
+    height: 5rem;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.258);
+    margin: 1rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.3rem;
+}
+
+
+.delete, .sub, .add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.475);
+    color: white;
+    margin: 0.4rem 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.lastspan{
+    display: flex;
+}
